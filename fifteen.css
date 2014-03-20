@@ -1,0 +1,54 @@
+/*
+	Chris Jimenez
+	CSE 154
+	Homework 8
+*/
+
+
+body {
+	text-align: center;
+}
+
+body, button {
+	font-family: cursive;
+	font-size: 14pt;
+}
+
+body {
+	text-align: center;
+}
+
+#puzzlearea {
+	font-size: 40pt;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 400px;
+}
+
+.piece {
+	background-image: url('background.jpg');
+	border: solid black 5px;
+	cursor: default;
+	height: 90px;
+	position: absolute;
+	width: 90px;
+	/*
+	commented out to pass validator. This code is so the text in the divs won't be highlighted
+	when clicking quickly. It annoyed me.
+	
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	*/
+	
+}
+
+.canmove:hover {
+	border-color: red;
+	color: red;
+	cursor: pointer;
+}
